@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Player App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="player">
+            <div id="nowPlaying">
+                <h2>Now Playing</h2>
+                <p id="currentTrack">-</p>
+            </div>
+            <audio id="audioPlayer" controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div id="playlistContainer">
+                <h2>Playlist</h2>
+                <ul id="playlist">
+                    <!-- Playlist items will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="prevButton">Prev</button>
+            <button id="playButton">Play</button>
+            <button id="pauseButton">Pause</button>
+            <button id="nextButton">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
